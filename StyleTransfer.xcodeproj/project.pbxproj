@@ -16,6 +16,9 @@
 		96A8BCA92AC81E1E000D4FDE /* StyleTransferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8BCA82AC81E1E000D4FDE /* StyleTransferTests.swift */; };
 		96A8BCB32AC81E1E000D4FDE /* StyleTransferUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8BCB22AC81E1E000D4FDE /* StyleTransferUITests.swift */; };
 		96A8BCB52AC81E1E000D4FDE /* StyleTransferUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A8BCB42AC81E1E000D4FDE /* StyleTransferUITestsLaunchTests.swift */; };
+		96A8BCC32AC8218F000D4FDE /* cuphead_int8.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 96A8BCC22AC8218F000D4FDE /* cuphead_int8.mlmodel */; };
+		96A8BCC52AC821B0000D4FDE /* mosaic_int8.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 96A8BCC42AC821B0000D4FDE /* mosaic_int8.mlmodel */; };
+		96A8BCC72AC821B7000D4FDE /* starry_night_int8.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 96A8BCC62AC821B7000D4FDE /* starry_night_int8.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		96A8BCAE2AC81E1E000D4FDE /* StyleTransferUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StyleTransferUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A8BCB22AC81E1E000D4FDE /* StyleTransferUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleTransferUITests.swift; sourceTree = "<group>"; };
 		96A8BCB42AC81E1E000D4FDE /* StyleTransferUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleTransferUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		96A8BCC22AC8218F000D4FDE /* cuphead_int8.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = cuphead_int8.mlmodel; path = "../../../../Fast-Neural-Style-Transfer/cuphead_int8.mlmodel"; sourceTree = "<group>"; };
+		96A8BCC42AC821B0000D4FDE /* mosaic_int8.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = mosaic_int8.mlmodel; path = "../../../../Fast-Neural-Style-Transfer/mosaic_int8.mlmodel"; sourceTree = "<group>"; };
+		96A8BCC62AC821B7000D4FDE /* starry_night_int8.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = starry_night_int8.mlmodel; path = "../../../../Fast-Neural-Style-Transfer/starry_night_int8.mlmodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 		96A8BC902AC81E1D000D4FDE /* StyleTransfer */ = {
 			isa = PBXGroup;
 			children = (
+				96A8BCC12AC81FDE000D4FDE /* ML Models */,
 				96A8BC912AC81E1D000D4FDE /* AppDelegate.swift */,
 				96A8BC932AC81E1D000D4FDE /* SceneDelegate.swift */,
 				96A8BC952AC81E1D000D4FDE /* ViewController.swift */,
@@ -125,6 +132,16 @@
 				96A8BCB42AC81E1E000D4FDE /* StyleTransferUITestsLaunchTests.swift */,
 			);
 			path = StyleTransferUITests;
+			sourceTree = "<group>";
+		};
+		96A8BCC12AC81FDE000D4FDE /* ML Models */ = {
+			isa = PBXGroup;
+			children = (
+				96A8BCC22AC8218F000D4FDE /* cuphead_int8.mlmodel */,
+				96A8BCC42AC821B0000D4FDE /* mosaic_int8.mlmodel */,
+				96A8BCC62AC821B7000D4FDE /* starry_night_int8.mlmodel */,
+			);
+			path = "ML Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +275,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96A8BCC32AC8218F000D4FDE /* cuphead_int8.mlmodel in Sources */,
+				96A8BCC52AC821B0000D4FDE /* mosaic_int8.mlmodel in Sources */,
 				96A8BC962AC81E1D000D4FDE /* ViewController.swift in Sources */,
 				96A8BC922AC81E1D000D4FDE /* AppDelegate.swift in Sources */,
 				96A8BC942AC81E1D000D4FDE /* SceneDelegate.swift in Sources */,
+				96A8BCC72AC821B7000D4FDE /* starry_night_int8.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,11 +465,13 @@
 				DEVELOPMENT_TEAM = FWYVY227K8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StyleTransfer/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,11 +495,13 @@
 				DEVELOPMENT_TEAM = FWYVY227K8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StyleTransfer/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

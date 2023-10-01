@@ -1,24 +1,166 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qKd-PO-vVy">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--StyleTransfer-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StyleTransfer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="vHC-0U-UwT">
+                                <rect key="frame" x="30" y="708" width="330" height="90"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cuphead-food" translatesAutoresizingMaskIntoConstraints="NO" id="NVe-RM-gWG">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="z3M-DA-Uga"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mosaic-food" translatesAutoresizingMaskIntoConstraints="NO" id="Rr4-z9-p8B">
+                                        <rect key="frame" x="120" y="0.0" width="90" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="Td9-H2-Pqc"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stary-night-food" translatesAutoresizingMaskIntoConstraints="NO" id="2uO-YY-LF4">
+                                        <rect key="frame" x="240" y="0.0" width="90" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="Vzk-OW-x5u"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="WXR-bA-yJe"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="7j3-W9-wCx">
+                                <rect key="frame" x="30" y="688" width="330" height="110"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shC-nK-aOt">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="110"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="110" id="zsc-YD-63Z"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="cuphead">
+                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="10"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="cupheadTransfer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dyo-tk-STC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4IZ-MN-bPz">
+                                        <rect key="frame" x="120" y="0.0" width="90" height="110"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="110" id="HCX-yV-jWl"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="mosaic">
+                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="10"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="mosaicTransfer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rih-su-ppP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rAX-in-WJe">
+                                        <rect key="frame" x="240" y="0.0" width="90" height="110"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="110" id="fYV-Ld-EVY"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="starry_night">
+                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="10"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="starry_nightTransfer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pZ9-b1-n8Y"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hj7-XW-jp6">
+                                <rect key="frame" x="0.0" y="138" width="390" height="515"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Hj7-XW-jp6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BIQ-M6-iXy"/>
+                            <constraint firstItem="7j3-W9-wCx" firstAttribute="top" secondItem="Hj7-XW-jp6" secondAttribute="bottom" constant="35" id="CtH-o8-15R"/>
+                            <constraint firstItem="vHC-0U-UwT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="J8i-Hj-Riv"/>
+                            <constraint firstAttribute="trailing" secondItem="Hj7-XW-jp6" secondAttribute="trailing" id="KIP-Rl-p82"/>
+                            <constraint firstItem="Hj7-XW-jp6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="Tuw-gG-PWc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vHC-0U-UwT" secondAttribute="bottom" constant="20" id="Vio-if-zK7"/>
+                            <constraint firstItem="7j3-W9-wCx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="amq-vN-Ote"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7j3-W9-wCx" secondAttribute="bottom" constant="20" id="bPK-Cv-yiI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7j3-W9-wCx" secondAttribute="trailing" constant="30" id="tEq-DJ-Pex"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vHC-0U-UwT" secondAttribute="trailing" constant="30" id="xw5-2X-GNU"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="StyleTransfer" id="PE2-Xu-ZEa">
+                        <rightBarButtonItems>
+                            <barButtonItem image="ellipsis" catalog="system" style="plain" id="3ai-vO-Oay">
+                                <color key="tintColor" red="0.21568627450980393" green="0.23529411764705882" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="shareImage:" destination="BYZ-38-t0r" id="ZaG-0E-6Wx"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Library" image="photo" catalog="system" id="PVb-vZ-V0r">
+                                <color key="tintColor" red="0.19607843137254902" green="0.23529411764705882" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="openLibrary:" destination="BYZ-38-t0r" id="YiY-oX-Uai"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="Hj7-XW-jp6" id="8FQ-6Z-6f1"/>
+                        <outlet property="shareButton" destination="3ai-vO-Oay" id="9GM-zr-f3i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1052.6717557251909" y="-27.464788732394368"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Gg0-wo-ikv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qKd-PO-vVy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1QU-wh-za5">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="vIj-Vl-EnJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Srm-dC-EpI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cuphead-food" width="1024" height="1024"/>
+        <image name="ellipsis" catalog="system" width="128" height="37"/>
+        <image name="mosaic-food" width="1024" height="1024"/>
+        <image name="photo" catalog="system" width="128" height="93"/>
+        <image name="stary-night-food" width="1024" height="1024"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
